@@ -1,0 +1,49 @@
+{
+    "name": "likewares/laravel-setting",
+    "description": "Package de paramètres persistants pour Laravel",
+    "version": "1.0.0",
+    "keywords": [
+        "laravel",
+        "persistent",
+        "settings",
+        "config"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "KOUAOBILE ASSANDE HUGUES",
+            "email": "assandehugues@gmail.com",
+            "homepage": "https://crm.likewares.com",
+            "role": "CEO Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": ">=5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=4.8",
+        "mockery/mockery": "0.9.*",
+        "laravel/framework": ">=5.3"
+    },
+    "autoload": {
+    "psr-4": {
+            "Likewares\\Setting\\": "./src"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Likewares\\Setting\\Provider"
+            ],
+            "aliases": {
+                "Setting": "Likewares\\Setting\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
