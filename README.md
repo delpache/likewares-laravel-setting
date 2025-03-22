@@ -19,7 +19,7 @@ Ce package vous permet de sauvegarder des paramètres de manière plus persistan
 Exécutez la commande suivante :
 
 ```bash
-composer require Likewares/laravel-setting
+composer require likewares/laravel-setting
 ```
 
 ### 2. Enregistrer (pour Laravel < 5.5)
